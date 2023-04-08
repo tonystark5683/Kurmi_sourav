@@ -276,6 +276,16 @@ p {
 	max-width: 500px;
 	margin: 0 auto;
 }
+#services .service-top h1:hover span {
+	color: #FD8A8A;
+	text-shadow: 0 0 10px #FD8A8A,
+	             0 0 20px #FD8A8A,
+		     0 0 40px #FD8A8A,
+		     0 0 80px #FD8A8A,
+		     0 0 120px #FD8A8A,
+		     0 0 160px #FD8A8A;
+
+}
 #services .service-bottom {
 	display: flex;
 	align-items: center;
@@ -338,6 +348,17 @@ p {
 #projects .projects-header h1 {
 	margin-bottom: 50px;
 }
+#projects .projects-header h1:hover span {
+	color: #FD8A8A;
+	text-shadow: 0 0 10px #FD8A8A,
+	             0 0 20px #FD8A8A,
+		     0 0 40px #FD8A8A,
+		     0 0 80px #FD8A8A,
+		     0 0 120px #FD8A8A,
+		     0 0 160px #FD8A8A;
+
+}
+
 #projects .all-projects {
 	display: flex;
 	align-items: center;
