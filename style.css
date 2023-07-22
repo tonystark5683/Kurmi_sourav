@@ -265,35 +265,39 @@ p {
 /* End Hero Section */
 
 /* Services Section */
+/* Services Section */
 #services .services {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 100px 0;
-}
-#services .service-top {
+  }
+  
+  #services .service-top {
 	max-width: 500px;
 	margin: 0 auto;
-}
-#services .service-top h1:hover span {
+  }
+  
+  #services .service-top h1:hover span {
 	color: #FD8A8A;
 	text-shadow: 0 0 10px #FD8A8A,
-	             0 0 20px #FD8A8A,
-		     0 0 40px #FD8A8A,
-		     0 0 80px #FD8A8A,
-		     0 0 120px #FD8A8A,
-		     0 0 160px #FD8A8A;
-
-}
-#services .service-bottom {
+				 0 0 20px #FD8A8A,
+				 0 0 40px #FD8A8A,
+				 0 0 80px #FD8A8A,
+				 0 0 120px #FD8A8A,
+				 0 0 160px #FD8A8A;
+  }
+  
+  #services .service-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin-top: 50px;
-}
-#services .service-item {
+  }
+  
+  #services .service-item {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -307,8 +311,10 @@ p {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-}
-#services .service-item::after {
+	transition: all 0.3s ease; /* Added transition for smooth effect */
+  }
+  
+  #services .service-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -318,24 +324,38 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	opacity: 0.9;
 	z-index: -1;
-}
-#services .service-bottom .icon {
+	transition: all 0.3s ease; /* Added transition for smooth effect */
+  }
+  
+  #services .service-item:hover {
+	transform: scale(1.05); /* Add scale effect on hover */
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+  }
+  
+  #services .service-item:hover::after {
+	opacity: 0.8; /* Reduce opacity on hover */
+  }
+  
+  #services .service-bottom .icon {
 	align-content: center;
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
-}
-#services .service-item h2 {
+  }
+  
+  #services .service-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-}
-#services .service-item p {
+  }
+  
+  #services .service-item p {
 	color: white;
 	text-align: left;
 	font-size: 10px;
-}
+  }
+  
 /* End Services Section */
 
 /* Projects section */
@@ -346,19 +366,18 @@ p {
 	padding: 100px 0;
 }
 #projects .projects-header h1 {
-	margin-bottom: 50px;
+	margin-top: 0px;
+	margin-bottom: 100px;
 }
 #projects .projects-header h1:hover span {
 	color: #FD8A8A;
 	text-shadow: 0 0 10px #FD8A8A,
-	             0 0 20px #FD8A8A,
-		     0 0 40px #FD8A8A,
-		     0 0 80px #FD8A8A,
-		     0 0 120px #FD8A8A,
-		     0 0 160px #FD8A8A;
-
+							 0 0 20px #FD8A8A,
+							 0 0 40px #FD8A8A,
+							 0 0 80px #FD8A8A,
+							 0 0 120px #FD8A8A,
+							 0 0 160px #FD8A8A;
 }
-
 #projects .all-projects {
 	display: flex;
 	align-items: center;
@@ -389,12 +408,12 @@ p {
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
-	
+
 }
 #prjects .project-info a{
 	color:#006600;
 	text-decoration: none;
-} 
+}
 
 #projects .project-info h2 {
 	font-size: 1.8rem;
@@ -418,7 +437,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	opacity: 0;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -672,6 +691,7 @@ p {
 		justify-content: center;
 		min-width: 20vh;
 	}
+	
 	#contact .contact-items {
 		width: 100%;
 		display: flex;
