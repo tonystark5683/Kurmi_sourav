@@ -63,7 +63,7 @@ p {
 	background-color: crimson;
 }
 .brand h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
 }
@@ -226,7 +226,7 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 3.2rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
